@@ -1,0 +1,50 @@
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 520px);
+  gap: 28px;
+  align-items: start;
+}
+
+.form {
+  display: grid;
+  gap: 18px;
+  padding: 28px;
+}
+
+.form label {
+  display: grid;
+  gap: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--muted);
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text);
+  padding: 14px 16px;
+  font: inherit;
+}
+
+.form button {
+  min-height: 48px;
+  border: 0;
+  background: linear-gradient(135deg, var(--accent), var(--accent-soft));
+  color: #111111;
+  font: inherit;
+  cursor: pointer;
+}
+
+.success {
+  margin: 0;
+  color: var(--success);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

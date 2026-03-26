@@ -1,0 +1,41 @@
+.shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.card {
+  max-width: 560px;
+  padding: 40px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--accent-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+}
+
+.card h1 {
+  margin: 0 0 16px;
+  font-size: clamp(2.2rem, 7vw, 4rem);
+}
+
+.card p {
+  color: var(--muted);
+  line-height: 1.7;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 18px;
+  text-decoration: none;
+  color: var(--text);
+}
